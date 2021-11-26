@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>PhoneSwap</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
         <!--Font du site-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +31,6 @@
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
-                <img src="images/shopping.png" width="30px" height="30px">
+                <a href="shoppingcart.php"><img src="images/shopping.png" width="30px" height="30px"></a>
             </div>
         </div>

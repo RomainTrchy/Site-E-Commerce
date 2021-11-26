@@ -31,7 +31,7 @@
                             <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </nav>
-                    <img src="images/shopping.png" width="30px" height="30px">
+                    <a href="shoppingcart.php"><img src="images/shopping.png" width="30px" height="30px"></a>
                 </div>
                 <div class="row">
                     <div class="col-2">
