@@ -1,0 +1,118 @@
+/*-- Renseignement paiement --*/
+
+.liv {
+    float: left;
+    margin-left: 300px;
+    font-size: 30px;
+    border: 0;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.case {
+    min-width: 93.8%;
+}
+
+select {
+    flex: inline-block;
+    padding: 10px 40px 10px 10px;
+    width: 46%;
+    margin: 4px 8px 4px 0px;
+}
+
+.crt input{
+    flex: inline-block;
+    padding: 10px 40px 10px 10px;
+}
+
+fieldset {
+    border: 0;
+}
+
+.standardbox,
+.expressbox {
+    font-size: large;
+}
+
+legend {
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+/*-- Article Commande--*/
+
+.particle {
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border: black solid 3px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: -680px 2% 5px 65%;
+}
+
+#prix {
+    float: right;
+}
+
+#numero {
+    margin-bottom: 20px;
+}
+
+.pbutton {
+    display: inline-block;
+    background: #a339ff;
+    color: white;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.pbutton:hover {
+    background: #704f8b;
+    filter: drop-shadow(15px 15px 15px #A393BF)
+}
+
+.crt {
+    float: left;
+    margin-left: 300px;
+    font-size: 30px;
+    justify-content: space-between;
+    padding: 0px 200px 0px 0px;
+    width: 55%;
+    margin-top: 40px;
+}
+
+.paypal img{
+    width: 80px;
+}
+
+.crt p{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.banqueligne, .virement, .paypal, .facture{
+    margin-top: 40px;
+}
+.mmfacture, .difffacture{
+    margin-left: 10px;
+}
+.mmfacture label, .difffacture label{
+    font-size: 16px;
+}
+
+#ccMois, #ccAnnee{
+    width: 100px;
+    margin-top: 20px;
+}
+
+.crt-select{
+    display: inline-block;
+}
+
+.total-price{
+    text-align: center;
+}

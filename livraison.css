@@ -1,0 +1,81 @@
+/*-- Renseignement livraison --*/
+
+.livall{
+    margin-top: 40px;
+}
+
+.input {
+    padding: 10px 10px 10px 10px;
+    margin-left: 5px;
+}
+
+.liv {
+    float: left;
+    margin-left: 300px;
+    font-size: 30px;
+    border: 0;
+    justify-content: space-between;
+}
+
+.case {
+    min-width: 93.8%;
+}
+
+.infoliv input,
+select {
+    flex: inline-block;
+    padding: 10px 40px 10px 10px;
+    width: 46%;
+    margin: 4px 8px 4px 0px;
+}
+
+fieldset {
+    border: 0;
+}
+
+.standardbox,
+.expressbox {
+    font-size: large;
+}
+
+legend {
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+
+/*-- Article Commande--*/
+
+.particle {
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border: black solid 3px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: -620px 2% 0 65%;
+}
+
+.pbutton {
+    display: inline-block;
+    background: #a339ff;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    position: absolute;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.pbutton:hover {
+    background: #704f8b;
+    filter: drop-shadow(15px 15px 15px #A393BF)
+}
+
+.crt {
+    float: left;
+    margin-left: 300px;
+    font-size: 30px;
+    justify-content: space-between;
+    padding: 0px 200px 0px 0px;
+    width: 55%;
+}

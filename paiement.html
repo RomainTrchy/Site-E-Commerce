@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>PhoneSwap - Page Paiement</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="paiement.css">
+        <!--Font du site-->
+        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css%22%3E">
+        <!--Logo Flavicon dans l'onglet-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+    </head>
+
+    <body>
+        <!--Header du site-->
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="main.php"><img src="images/logo.png" width="130px"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="main.php">Menu</a></li>
+                            <li>&rsaquo;</li>
+                            <li><a href="shoppingcart.php">Panier</a></li>
+                            <li>&rsaquo;</li>
+                            <li><a href="livraison.HTML">Livraison</a></li>
+                            <li>&rsaquo;</li>
+                            <li><a href="paiement.HTML">Paiement</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="crt">
+            <fieldset class="cartecrd">
+                <input type="radio" name="typepmen" id="crd">
+                <label for="crd">Carte de crédit</label>
+                <br>
+                <input placeholder="Numéro de carte de crédit" name="numéroCarteCredit" id="num_crd" required>
+                <br>
+                <div class="crt-select">
+                    <select name="carteMoisExpiration" id="ccMois" required>
+                        <option value="" disabled selected>MM</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    / <!-- Permet de mettre un slash entres les select (problèmes quand on met une balise p)-->
+                    <select name="carteAnneeExpiration" id="ccAnnee" required>
+                        <option value="" disabled selected>AA</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                        <option value="2035">2035</option>
+                    </select>
+                </div>
+                <input placeholder="CVV" name="carteCodeSecu" id="carteCodeSecu" size="4" required>
+            </fieldset>
+
+
+            <div class="banqueligne">
+                <input type="radio" name="typepmen" id="bqlg">
+                <label for="bqlg">Opérations bancaires en ligne</label>
+                <p>Pour les banques rattachées, effectuez un paiement directement depuis votre compte. Les banques disponibles varient en fonction de votre adresse de facturation. Les options peuvent inclure :</p>
+            </div>
+
+            <div class="virement">
+                <input type="radio" name="typepmen" id="vrmt">
+                <label for="vrmt">Virement bancaires</label>
+                <p>Suivez les instructions indiquées sur la page « Commande terminée » pour effectuer le paiement électronique de banque à banque. Ce processus peut prendre environ 4 à 5 jours. Dès que notre banque s aura confirmé la réception de votre paiement,
+                    nous vous enverrons votre commande dans les deux jours qui suivront.</p>
+            </div>
+
+            <div class="paypal">
+                <input type="radio" name="typepmen" id="pyp">
+                <a href="https://www.paypal.com/fr/" target="_blank">
+                    <img src="images/paypal.png" alt="PayPal logo">
+                </a>
+                <p>Effectuez un paiement via votre compte PayPal, nouveau ou existant</p>
+            </div>
+
+            <div class="facture">
+                <label>Adresse de facturation:</label>
+                <div class="mmfacture">
+                    <input type="radio" name="factureID" id="mm">
+                    <label>Identique à l'adresse de livraison</label>
+                </div>
+                <div class="difffacture">
+                    <input type="radio" name="factureID" id="diff">
+                    <label>Utiliser une autre adresse de facturation</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Affichage de la commande à afficher sur la droite de l'écran-->
+        <div class="particle">
+            <h3>Récapitulatif de la commande</h3>
+            </br>
+            <p>N° de réference 2116259075440</p>
+            <a href="#">Code promotionnel</a>
+            <hr>
+            <div class="col-4">
+                <a href="product-details.php"><img src="images/iphone-13.png"></a>
+                <h4>Iphone 13</h4>
+                <p>989,00€</p>
+            </div>
+            <hr>
+
+            <!--type de livraison = côut-->
+            <div class="total-price">
+                <p><strong>Total</strong></p>
+                <p><strong>989,00€</strong></p>
+            </div>
+        </div>
+    </body>
+</html>

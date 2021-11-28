@@ -71,7 +71,8 @@
             </tr>
         </table>
     </div>
-
+    <br>
+    <a href="livraison.HTML"><button class="bouton-contact">Payer</button></a>
 </div>
 
 <!--Footer du site-->
